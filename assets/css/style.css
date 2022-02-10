@@ -3,6 +3,7 @@
 font-family: Ubuntu-C;
 src: url(../fonts/Ubuntu-C.ttf);
 }
+
 body{font-family: Ubuntu-C;}
 
 /* navigation */
@@ -35,22 +36,31 @@ display: grid;align-items: center;padding:1rem;grid-template-columns: repeat(3,1
 .searchBox img{width: 43px;cursor: pointer;}
 /* card section */
 /* overlay */
+/* netflixCards */
+.container2::-webkit-scrollbar{display:none;}
+.container2{width: 100%;overflow-y: hidden;overflow-x: scroll;}
+.rowSlide {transition: 450ms transform;font-size: 0;margin:20px 0;padding-bottom: 10px;display: flex;}
+.tile {position: relative;margin-right: 10px;cursor: pointer;transition: 450ms all;transform-origin: center left;}
+.tile__img {width: 250px;height: 140.625px;-o-object-fit:cover;object-fit: cover;}
+.rowSlide:hover .tile {opacity: 0.3;}
+.rowSlide:hover .tile:hover {transform: scale(1.5);opacity: 1;}
+.tile:hover~.tile {transform: translate3d(125px, 0, 0);}
+/* overlay */
 .image {display: block;width: 100%;height: auto;}
-.overlay {position: absolute;bottom: 100%;left: 0;right: 0;background-color: rgba(0, 0, 0, 0.774);overflow: hidden;width: 100%;height:0;transition: .5s ease;display: grid;align-items: center;justify-content: center;text-align: center;}
-.ImagesBox:hover .overlay {bottom: 0;height: 100%;}
-.text {color: white;padding: 1rem;}
-.text h3{font-size: 12px;}
-.text p{font-size: 10px;}
+.overlay {position: absolute;bottom: 100%;left: 0;right: 0;background-color:rgb(0 0 0 / 66%);overflow: hidden;width: 100%;height:0;
+transition: .5s ease;display: grid;align-items: center;justify-content: center;}
+.tile:hover .overlay {bottom: 0;height: 100%;}
+.text h3{font-size: 16px;}
+.text p{font-size: 14px;}
+.text{text-align: center;color: #fff;padding: 1rem;}
+
+
+
 .downloadLink{text-decoration: none;font-size: 12px;color: #f8d548;}
 .icons{display: grid;grid-template-columns:repeat(2,1fr);align-items: center;justify-content: center;text-align: center;}
 .icon1{width: 30px;height: 30px;border-radius: 50%;padding: 5px;}
 .icon1 img{width:100%;}
-.text .categories{background-color: red;
-    padding: 2px 10px;
-    color: #fff;
-    text-decoration: none;
-    font-size: 12px;
-    border-radius: 20px;}
+.text .categories{background-color: red;padding: 2px 10px;color: #fff;text-decoration: none;font-size: 12px;border-radius: 20px;}
 .mainHeading{min-width: 35%;margin: 0 auto;text-align: center;max-width:100%;width: 35%;}
 .uniqRow{padding:6rem 0rem 2rem!important;}
 .fullCard{background: #f8d548;}
@@ -60,10 +70,9 @@ display: grid;align-items: center;padding:1rem;grid-template-columns: repeat(3,1
 .bottomLine{    width: auto;height: 5px;background: rgb(131,58,180);background: linear-gradient(90deg, rgb(255 0 0) 0%, rgb(0 0 0) 50%, rgb(255 34 0) 100%);margin: 1rem 2rem 3rem;border-radius: 50%;}
 .mainSlide{width: 100%;overflow:auto;}
 .mainSlide::-webkit-scrollbar{width: 0;}
-.rowSlide{width: 100%;}
 .ImagesBox{min-height: 150px;margin-bottom: 5px;
 transition: 0.5s ease all;cursor: pointer;height: 150px;border-radius: 4px;position: relative;transform: scale(0.9);}
-.ImagesBox:hover{transform: scale(1);box-shadow: 0px 20px 50px rgb(0 0 0 / 60%);z-index: 1000;}
+.ImagesBox:hover{transform: scale(1.2);box-shadow: 0px 20px 50px rgb(0 0 0 / 60%);z-index: 1000;}
 .mainSlide h2{text-transform: uppercase;margin-bottom: 0.5rem;color: #fff;}
 .ImagesBox img{ width: 100%;height: 100%;object-fit: cover;border-radius: 4px;}
 .imageBox2{height: 300px;}
