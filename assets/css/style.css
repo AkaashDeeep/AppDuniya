@@ -60,8 +60,8 @@ transition: .5s ease;display: grid;align-items: center;justify-content: center;}
 .fullCard{background:rgb(198 217 168 / 85%);}
 .fullCard2{background: rgb(255 222 99);background:linear-gradient(rgb(198 217 168 / 81%) 0%, #FFAB76 43%);}
 .MainCard{padding: 2rem 0rem;}
-.mainHeading h2{font-size: 2.5rem;color:#0c1924;}
-.bottomLine{    width: auto;height: 5px;background: rgb(131,58,180);background:linear-gradient(90deg, rgb(255 171 118) 0%, rgb(0 0 0) 50%, rgb(255 171 118) 100%);margin: 1rem 2rem 3rem;border-radius: 50%;}
+.mainHeading h2{font-size: 2.5rem;color:#fb0000;}
+.bottomLine{    width: auto;height: 5px;background: rgb(131,58,180);background:linear-gradient(90deg, rgb(253 0 0) 0%, rgb(0 0 0) 50%, rgb(255 99 0) 100%);margin: 1rem 2rem 3rem;border-radius: 50%;}
 .mainSlide{width: 100%;overflow:auto;}
 .mainSlide::-webkit-scrollbar{width: 0;}
 .ImagesBox{min-height: 150px;margin-bottom: 5px;
