@@ -176,19 +176,19 @@ width:70%;padding:2rem 0rem;line-height: 1.5rem;transition: all ease 0.5s;transf
 display: none;transition: all ease 0.5s;transform: translateX(100%);opacity: 0;}
 .list a li {padding: 0rem 2rem;color: #fff;}
 .active2{padding: 0px 0px;}
-.slide{transform: translateX(0%);opacity:1;display: block;}
+.slide{transform: translateX(0%);opacity:1;display: block;overflow-y: scroll;overflow-x: hidden;}
 .mobileMenu {display:block;position: absolute;right: 15px;top: 15px;}
 .mainHeading {min-width: 100%;max-width: 100%;width: 100%;}
 .newsBox{display: block;padding: 1rem;}
-.blacksection{padding: 1rem;}
 .footerRow {display: block;}
 footer {padding: 3rem 1rem;}
 .footerBox{margin-bottom: 2rem;}
 .serviceRow {padding: 1rem;}
-.rowProfile{display: block;}
+.rowProfile{display: block;padding: 0rem 1rem;}
 .profileImage img {width: 100%;}
 .profileText {margin-bottom: 2rem;}
-.workPlate {width: 90%;bottom: -6rem;display: grid;padding: 1rem;grid-template-columns: repeat(1,1fr);grid-gap: 10px;}
+.workPlate {width: 90%;bottom: -6rem;display: grid;padding: 1rem;grid-template-columns: repeat(1,1fr);grid-gap: 10px;
+justify-items: left;}
 .maskBanner h2 {color: #ffffff;font-size: 2.5rem;}
 .rowSlide{width: 100%;}
 .works {grid-gap: 10px;}
@@ -198,4 +198,5 @@ footer {padding: 3rem 1rem;}
 .newstext h2{font-size: 1.5rem;}
 .newstext p{font-size: 1.2rem;}
 .from input {height: 44px;font-size: 16px;}
+.columns{padding: 0rem 1rem;}
 }
