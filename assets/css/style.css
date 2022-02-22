@@ -161,6 +161,8 @@ display: none;transition: all ease 0.5s;transform: translateX(100%);opacity: 0;}
 .companyRow {grid-template-columns: repeat(2,1fr);}
 .footerRow{display: block;}
 .footerInfo{padding: 0rem; margin-bottom: 2rem;}
+.footer {padding: 2rem 0rem;}
+.questionCards{margin-left: 0rem;}
 }
 /* only for ipad */
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
